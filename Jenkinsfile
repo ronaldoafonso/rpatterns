@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ("Unit Test") {
             steps {
-                sh "go test -v ./..."
+                sh "go test -v -cover ./..."
             }
         }
     }
